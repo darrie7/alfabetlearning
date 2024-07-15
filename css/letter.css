@@ -1,0 +1,127 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+.image-container {
+    min-height: 30vh;
+    max-height: 30vh;
+    margin-bottom: 2.5vh;
+    /*background-color: #ddd;
+    background-size: cover;
+    background-position: center;*/
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37vw;
+    border-radius: 5px;
+}
+
+.image-container img {
+    min-height: 30vh;
+    max-height: 30vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.grid img, .grid button {
+    display:inline-flex;
+    max-width: 20vh;
+    max-height: 18vh;
+    min-height: 18vh;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 9vh;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.grid img:disabled, .grid button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button button {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content {
+    display: inline-flex;
+    flex-direction: column;
+    /*position: fixed;*/
+    /*background-color: #fefefe;*/
+    /*margin: 15% auto; */
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 80%; 
+    max-width: 500px;
+    text-align: center;
+    bottom: 30vh;
+    justify-self: center;
+    left: 50%;
+}
+
+.modal-image {
+    min-width: 75vw;
+    max-width: 75vw;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button-container button {
+    width: 250px;
+    padding: 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3vh;
+}
